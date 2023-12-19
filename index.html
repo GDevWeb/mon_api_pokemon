@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="pokemon api">
+  <title>Mon Api Pokemon</title>
+  <link rel="shortcut icon" href="./ressources/logo_pokeball.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Mon API Pokemon</h1>
+    </header>
+
+    <main>
+      <form id="formPokemon">
+        <div class="form-group">
+          <label for="searchPokemon">Saisir le nom du pokémon que vous recherchez !</label>
+          <input type="text" name="searchPokemon" id="searchPokemon" placeholder="taper le nom du pokémon" />
+          <button>Rechercher</button>
+          <p class="infoText"></p>
+        </div>
+      </form>
+
+      <div id="containerDataPokemon">
+        <div class="cardPokemon">
+          <p class="pokemonName">
+            Nom : <span class="pokemonName">???</span>
+          </p>
+          <p class="pokemonNickName">
+            Surnom : <span class="pokemonNickName">???</span>
+          </p>
+          <p class="generation">
+            Génération : <span class="generation">???</span>
+          </p>
+          <p class="pokemonId">
+            Pokemon Numéro : <span class="pokemonId">???</span>
+          </p>
+          <p class="types">Type(s) : <span class="types">???</span></p>
+          <p class="weakness">
+            Résistances : <span class="weakness">???</span>
+          </p>
+          <figure>
+            <img src="ressources/logo_pokeball.png" alt="" class="pokemonPicture" />
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; <span id="currentYear"></span> Dammaretz Gaëtan - GDWD</p><p>Tous droits réservés</p>
+        <div class="footer-links">
+          <a href="https://github.com/Aescanor" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/ga%C3%ABtan-dammaretz/" target="_blank">Linkedin</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="tooltip" class="tooltip">
+    <span class="tooltip">Résistances :</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
